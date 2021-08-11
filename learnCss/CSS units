@@ -1,0 +1,16 @@
+CSS units Absolute
+--------------------
+1. cm - centimeters
+2. mm - millimeters
+3. in - inches
+4. px - Pixels(1px = 1/96th of 1in)
+5 pt - Points(1pt = 1/72 of 1in)
+6. pc Picas(1pc = 12pt)
+
+CSS units = relative
+--------------------
+1. % - to parent element
+2. em - To font-size of parent element (ex: 1.2em is 1.2 times of fontsize of parent element)
+3. rem - to font-size of root element
+4. vw - to 1% of viewport width
+5. vh - to 1% of viewport height
