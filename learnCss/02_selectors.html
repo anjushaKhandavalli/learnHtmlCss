@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS selectors</title>
+  <style>
+    /* Body styling (Element selector)*/
+    body{
+      background-color: black;
+    }
+    /* To refer id use # */
+    #primary-heading {
+      color: blue;
+    }
+    /* to refer class use . */
+    .secondary-heading{
+      color: red
+    }
+    #welcome {
+      background-color: grey;
+    }
+    #about {
+      background-color: grey;
+    }
+    /* To select multiple selectors */
+    #welcome, #about, h2 {
+      padding: 4px;
+      margin-bottom: 4px;
+      border: 4px solid green;
+    }
+    /* Nested selectors ex: to all p's which are inside to id welcome*/
+    #welcome p{
+      color: brown;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcome">
+    <h2 id="primary-heading">Welcome</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ratione voluptatum eligendi. Perspiciatis laboriosam voluptatum neque delectus labore dolor! Enim.</p>
+    <div>
+      <h3>Please register</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dolorem?</p>
+    </div>
+  </div>
+  <div id="about">
+    <h2 class="secondary-heading">About</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dolor, nemo non voluptates quaerat unde quas illum voluptate similique autem?</p>
+  </div>
+</body>
+</html>
