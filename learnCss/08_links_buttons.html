@@ -1,0 +1,59 @@
+<!-- links has different states: regular state, hover state, active state and visited state -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links & Buttons</title>
+  <style>
+    body{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    a{
+      color: green;
+      /* text decoration removes the underline below the link text */
+      text-decoration: none;
+    }
+
+    /* Styles that will be applied while hovering through the a tag content */
+    a:hover{
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* Styles that will be applied for the visited a tags */
+    a:visited{
+      color: blue;
+    }
+
+    /* Styles that will be applied during active state of a tag */
+    a:active{
+      color: black;
+    }
+
+    /* Button styling */
+    .btn{
+      background: blue;
+      color: white;
+      border: none;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn:hover{
+      color: lightcoral;
+      background: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <a href="#" class="btn">My Link</a>
+  <br>
+  <br>
+  <button class="btn">My button</button>
+</body>
+</html>
