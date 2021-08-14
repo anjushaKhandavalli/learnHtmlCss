@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+    }
+
+    body{
+      height: 4000px;
+    }
+
+    #box-1{
+      position: relative;
+      top: 40px;
+      left: 280px;
+      background: red;
+      z-index: 1;
+    }
+
+    .container{
+      width: 400px;
+      height: 400px;
+      background-color: aquamarine;
+      position: relative;
+    }
+    #box-2{
+      position: absolute;
+      top: 20px;
+      left:20px;
+      background-color:antiquewhite;
+    }
+    #box-3{
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: green;
+    }
+    #box-4{
+      background: rgb(133, 57, 110);
+      position: fixed;
+    }
+    #box-5{
+      background: rgb(206, 241, 3);
+      position: sticky;
+      top:0;
+    }
+  </style>
+</head>
+<body>
+  <div id="box-1" class="box"></div>
+  <div class="container">
+    <div id="box-2" class="box"></div>
+    <div id="box-3" class="box"></div>
+  </div>
+  <div id="box-4" class="box"></div>
+  <div id="box-5" class="box"></div>
+</body>
+</html>
+<!-- Position values 
+Static - Not effected by tblr(top, bottom, left, right) properties/values (Default value)
+Relative - tblr values cause element to be moved from its normal position
+Absolute - Positioned relative to its parent element that is positioned "relative"
+Fixed - Positioned relative to the viewport
+Sticky - Positioned based on scroll position
+-->
