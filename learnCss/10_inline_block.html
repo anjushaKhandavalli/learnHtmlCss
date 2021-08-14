@@ -1,0 +1,62 @@
+<!-- let's learn how to change inline level elements to block level elements and vice versa -->
+<!-- 1. Block level elements can be aligned center by using margin: auto -->
+<!-- 2. Inline elements can'be aligned center using margin: auto-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline & Block styling</title>
+  <style>
+    li{
+      display: inline;
+    }
+    li a{
+      padding-right: 20px;
+    }
+
+    /* img is inline level element..so to align it middle using margin: auto first we have to convert that to block level element */
+    img{
+      display: block;
+      margin:auto;
+      width: 300px;
+      height: 300px;
+    }
+
+    .box{
+      background-color:rgb(230, 226, 222);
+      border: 3px solid rgb(23, 150, 65);
+      margin-bottom: 16px;
+      padding: 0px 20px;
+      width: 32.8%;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+  <br><br>
+  <img src="/learnCss//images/leaf.png" alt="My image">
+  <br><br>
+  <div style="margin: auto">
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia ut accusamus molestiae officia incidunt beatae facilis amet dolorem labore neque, sed nisi, rem sit consectetur sunt aspernatur sint debitis vero. Amet soluta eius aspernatur hic voluptates consectetur ipsum esse.</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia ut accusamus molestiae officia incidunt beatae facilis amet dolorem labore neque, sed nisi, rem sit consectetur sunt aspernatur sint debitis vero. Amet soluta eius aspernatur hic voluptates consectetur ipsum esse.</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia ut accusamus molestiae officia incidunt beatae facilis amet dolorem labore neque, sed nisi, rem sit consectetur sunt aspernatur sint debitis vero. Amet soluta eius aspernatur hic voluptates consectetur ipsum esse.</p>
+    </div>
+  </div>
+</body>
+</html>
