@@ -1,3 +1,6 @@
 fileignoreconfig:
 - filename: 03_meta_tags.html
   checksum: 733b3d838c0a574605fac45995d8f6e589b81d0601c247cb4dc953816d6cfe47
+fileignoreconfig:
+- filename: learnCss/12_form_styling.html
+  checksum: a0443c806d2a21979f1853005ae695a0bca6fd4e1b67e00d7ecdcd29ff6e12c9
