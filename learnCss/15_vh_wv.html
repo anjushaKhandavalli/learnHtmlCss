@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vh and Vw Units</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header{
+      background: black url('https://source.unsplash.com/daily') no-repeat center center/cover;
+      color: white;
+      /* To set the header all over the view port height */
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      padding-top: 15rem;
+    }
+
+    @media(max-height: 450px){
+      header{
+        padding-top: 5rem;
+      }
+    }
+
+    header h1{
+      font-size: 3rem;
+    }
+
+    header p{
+      margin: 1rem 0;
+    }
+
+    .btn{
+      display: inline-block;
+      text-decoration: none;
+      background-color: aqua;
+      color: red;
+      padding: 0.75rem 2rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome To Our Website</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe eligendi perferendis, dolorem distinctio quam?</p>
+    <a href="#" class="btn">Find Out More</a>
+  </header>
+
+
+  <section>
+    <h2>About my company</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati praesentium incidunt vitae dolor consequuntur doloribus, quaerat rem ullam consequatur doloremque delectus ipsa. Dolore asperiores alias itaque soluta commodi culpa vel odio nobis inventore quasi, sint, quibusdam laborum eligendi consectetur obcaecati ipsa sit possimus omnis corporis modi sunt, maxime animi accusantium. Accusamus distinctio inventore natus illo incidunt dolor velit explicabo odit fugiat voluptas maxime, facere ipsam blanditiis accusantium dolore soluta ratione at. Quos aperiam unde praesentium in at nemo ut.</p>
+  </section>
+</body>
+</html>
