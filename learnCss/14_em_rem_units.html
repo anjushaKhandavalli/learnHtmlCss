@@ -1,0 +1,72 @@
+<!-- em and rem units are similar only the multipliers are different-->
+<!-- em: multiplier or relative to the font size of its parent container -->
+<!-- rem: multiplier or relative to the font size of its root html element -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em and Rem units</title>
+  <style>
+    /* Before this styling the h1 size will be 1.7em i.e 1.7 * 16px(16 is the parent of h1 i.e div default font size) and p size is 1em i.e 16px */
+    #box-1{
+      font-size: 20px;
+    }
+    /* Now after this styling h1 1.7em = 1.7*20px and p 1em = 1*20px */
+
+    #box-1 h1{
+      /* h1 1em i.e  1.5* parent font size  ie 1.5*20(parent is div) so that equals 30px*/
+      font-size: 1.5em;
+      /* confusion 1: now padding is 30px ie 1*30px(font size of same element)  */
+      padding: 1em;
+    }
+
+    #box-1 ul{
+      /* confusion2: first ul gets font-size 1.2*30px, second ul gets 1.2*(1.2*30) and so on*/
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="box-1">
+    <h1>Box One</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio et qui doloremque exercitationem veritatis, impedit suscipit laboriosam culpa unde?</p>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>
+        <ul>
+          <!-- li{$}*4 to get 4 li items -->
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+          </li>
+          <li>5</li>
+        </ul>
+      </li>
+      <li>5</li>
+    </ul>
+  </div>
+  <div id="box-2">
+    <h1>Box Two</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores optio et qui doloremque exercitationem veritatis, impedit suscipit laboriosam culpa unde?</p>
+  </div>
+</body>
+</html>
+
+<!-- rem is striaght forward..if we give x em for any element it will be x * root elements font size(default font size is 16px) -->
+<!-- rem units are compatible with browser setting and accessiblity while em units are not because rem units depends on the root elements font size. so when we change the font size in browser settings the root element font size will be changed-->
+<!-- Note: to change the root element font-size
+  html{
+    font-size: 18px;
+  }
+-->
