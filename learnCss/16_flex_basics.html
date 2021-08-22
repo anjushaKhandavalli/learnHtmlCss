@@ -1,0 +1,69 @@
+<!-- Read about more at: https://thoughtworks.udemy.com/course/modern-html-css-from-the-beginning/learn/lecture/19142416#overview -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flex-container{
+      display: flex;
+      /* Default value for flex-direction is row */
+      flex-direction: row;
+      /* Flex wrap helps to shrink the list items to next row when there are more to align */
+      /* flex-wrap: wrap; */
+    }
+
+    .item{
+      background: #f4f4f4;
+      border: #ccc solid 2px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      width: 200px;
+      /* To make all items take the same amount of space from the entire width */
+      /* flex-grow: 1; */
+      /* Note flex has three value grow,shrink, basis 
+      ex: flex: 1 0 200px*/
+    }
+
+    .item1{
+      /* Dont shrink the item while reducing the screen size */
+      flex-shrink: 0;
+    }
+    .item2{
+      /* flex grow 1 fills up the remaining space for this item */
+      flex-grow: 1;
+      flex-basis: 0
+    }
+    .item3{
+      /* Flex grow 2 makes this item twice the size of item2 (But here as the width is defined as 200px this won't be exactly double), so to set the width to 0 use flex-basis: 0 */
+      flex-grow: 2;
+      flex-basis: 0;
+      /* width: 0; */
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="item item1">
+      <h3>Item 1</h3>
+    </div>
+    <div class="item item2">
+      <h3>Item 2</h3>
+    </div>
+    <div class="item item3">
+      <h3>Item 3</h3>
+    </div>
+  </div>
+</body>
+</html>

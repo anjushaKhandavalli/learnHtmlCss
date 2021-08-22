@@ -1,0 +1,13 @@
+1.  Flexbox is modern layout mode in css3
+2.  Flex is a value for the display property
+3.  Replaces float and is much more elegant to work with
+4.  Align item both horizontal(row) and vertical(column)
+5.  Flex items can be re-ordered via CSS
+
+Setting display: flex will automatically align all the child divs horizontally
+
+Align properties
+
+justify-content: ALign along the main axis(horizontal)
+align-items: Align items along the cross axis(vertical)
+align-content: Align when extra space in cross axis
